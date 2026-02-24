@@ -1,0 +1,2 @@
+[24-Feb-2026 16:47:04 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in D:\website\htdocs\web\wealth-genius-new\resources\wp-includes\class-wpdb.php on line 1994
+[24-Feb-2026 16:47:11 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in D:\website\htdocs\web\wealth-genius-new\resources\wp-includes\class-wpdb.php on line 1994

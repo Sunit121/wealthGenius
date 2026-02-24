@@ -1,0 +1,505 @@
+:root {
+    --green: #279C5C;
+    --dark-green: #1E4F2C;
+    /* Approximation of the dark background */
+    --card-bg: #1A4D2E;
+    /* Darker green from image */
+    --font-pd: 'Playfair Display', serif;
+    --font-pn: 'Poppins', sans-serif;
+    --white: #ffffff;
+}
+
+/* Custom Blog Card Styles */
+.blog-card-custom {
+    margin-bottom: 30px;
+}
+
+.custom-card-wrapper {
+    background-color: var(--card-bg);
+    color: var(--white);
+    border-radius: 30px;
+    overflow: hidden;
+    padding-bottom: 60px;
+    /* Space for the button */
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-card-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.post-thumbnail-wrapper {
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.custom-thumb {
+    border-radius: 20px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px 25px 0 25px;
+}
+
+.post-date {
+    font-family: var(--font-pn);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.entry-title {
+    font-family: var(--font-pd);
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.entry-title a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.entry-title a:hover {
+    color: var(--green);
+}
+
+.entry-excerpt {
+    font-family: var(--font-pn);
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.entry-excerpt p {
+    margin-bottom: 0;
+}
+
+/* Custom Arrow Button */
+.custom-read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    /* Light background cutout effect */
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 30px;
+    /* Inverted radius effect simulator */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 2;
+}
+
+/* The actual button circle */
+.custom-read-more::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-bg);
+    /* Match card to hide corner */
+    z-index: -1;
+}
+
+/* The clear/white corner behind the button */
+.custom-read-more::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    /* Page background color */
+    border-radius: 30px 0 0 0;
+    /* Inverted shape */
+    z-index: -2;
+    display: none;
+    /* Hard to do inverse radius easily, stick to simple floating button for now */
+}
+
+/* Let's try a different approach for the specific button design */
+.custom-read-more {
+    width: 60px;
+    height: 60px;
+    background-color: #2E8B57;
+    /* Lighter green button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    transition: background 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-read-more:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+.archive .page-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.blog-content-wrapper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    min-height: 500px;
+}
+
+.post-template-default .blog-content-wrapper {
+    margin-top: 50px;
+}
+
+.post-template-default .entry-content {
+    margin-top: 50px;
+}
+
+.post-template-default .entry-content .wp-block-heading {
+    font-family: var(--font-pd);
+    padding: 15px 0px;
+    font-size: 34px;
+}
+
+.post-template-default .entry-content p {
+    font-size: 16px;
+    font-family: var(--font-pn);
+}
+
+.blog-navigation {
+    padding-top: 30px;
+    ;
+}
+
+.blog-navigation .nav-previous,
+.blog-navigation .nav-next {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.blog-navigation .nav-previous a {
+    color: #000;
+    font-family: var(--font-pd);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-navigation .nav-next a {
+    color: #000;
+    font-family: var(--font-pd);
+    font-size: 20px;
+}
+
+.post-template-default .entry-header {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, #279C5C 0%, #1E4F2C 100%);
+    color: var(--white);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.post-template-default .entry-header .entry-meta span {
+    color: var(--white);
+}
+
+.post-template-default .post-banner img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.guidesMain {
+    margin-top: 50px !important;
+}
+
+.blogsHd {
+    text-align: center;
+}
+
+.blogsHd h1 {
+    font-size: 48px;
+    font-family: var(--font-pd);
+    text-align: center;
+}
+
+.guideImg {
+    width: 300px;
+    object-fit: cover;
+    height: auto;
+    margin: 0 auto;
+}
+
+.guideImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guide-title {
+    font-family: var(--font-pd);
+    font-size: 24px;
+    margin: 30px 0px 0px;
+    text-align: center;
+}
+
+.guideList-btn {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.guideList-btn a {
+    text-align: center;
+    display: block;
+    background: linear-gradient(80deg, #279C5C 0%, #043B1C 100%);
+    color: var(--white);
+    width: fit-content;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--green);
+    margin: 0 auto;
+}
+
+.guideList-btn a:hover {
+    background: transparent;
+    border: 1px solid var(--green);
+    color: #000;
+}
+
+.blogList {
+    margin-top: 50px !important;
+}
+
+.author-bio {
+    display: none;
+}
+
+.post-template-default article footer {
+    display: none;
+}
+
+.post-template-default .comment-respond {
+    display: none;
+}
+
+.blog .blog-content-wrapper {
+    margin-top: 50px;
+}
+
+.blog .card .card-body {
+    padding: 30px;
+}
+
+.blog .card .card-body header {
+    background: transparent;
+    box-shadow: initial;
+    padding: 0;
+    height: auto;
+}
+
+.blog .card .card-body .card-title a {
+    font-family: var(--font-pd);
+    font-size: 24px;
+}
+
+.blog .card .card-body .card-text p {
+    font-size: 16px;
+    font-family: var(--font-pn);
+    color: #777777;
+}
+
+.blogs-read-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blogs-read-more a {
+    background: var(--green);
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs-read-more a svg {
+    stroke: var(--white)
+}
+
+/* Events Page Styles */
+.container-events {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    font-family: var(--font-pd);
+    font-size: 36px;
+    color: var(--dark-green);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--green);
+}
+
+/* Latest Events Card Styles */
+.latest-event {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.latest-event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.event-thumbnail {
+    overflow: hidden;
+}
+
+.event-thumbnail img {
+    transition: transform 0.5s ease;
+}
+
+.latest-event:hover .event-thumbnail img {
+    transform: scale(1.1);
+}
+
+.btn-view-more {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(80deg, #279C5C 0%, #043B1C 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: var(--font-pn);
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.btn-view-more:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+/* Past Events List Styles */
+.past-event-item {
+    transition: background 0.3s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.past-event-item:hover {
+    background: #f8fcf9;
+}
+
+.past-event-title a {
+    font-family: var(--font-pd);
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.past-event-item:hover .past-event-title a {
+    color: var(--green);
+}
+
+.past-event-date {
+    font-family: var(--font-pn);
+    font-weight: 500;
+}
+
+/* Pagination Styles */
+.page-numbers {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.page-numbers li {
+    display: inline-block;
+}
+
+.page-numbers .page-numbers {
+    margin: 0;
+    /* Reset margin for nested elements if any */
+}
+
+.page-numbers a,
+.page-numbers span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: var(--dark-green);
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    font-family: var(--font-pn);
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.page-numbers a:hover {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+    transform: translateY(-2px);
+}
+
+.page-numbers .current {
+    background: linear-gradient(80deg, #279C5C 0%, #043B1C 100%);
+    color: #fff;
+    border-color: var(--green);
+}
+
+.page-numbers .prev,
+.page-numbers .next {
+    font-family: var(--font-pd);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
