@@ -1,45 +1,47 @@
 
 /*Dropdown Menu*/
-document.addEventListener('DOMContentLoaded', function() {
-    const triggers = document.querySelectorAll('.menu-trigger');
-    const overlay = document.querySelector('.overlay');
-    const allMenus = document.querySelectorAll('.mega-dropdown');
-    // 1. Select the links
-    const menuLinks = document.querySelectorAll('.mega-dropdown a');
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('.menu-trigger');
+  const overlay = document.querySelector('.overlay');
+  const allMenus = document.querySelectorAll('.mega-dropdown');
+  // 1. Select the links
+  const menuLinks = document.querySelectorAll('.mega-dropdown a');
 
-    function closeAll() {
-        allMenus.forEach(menu => menu.classList.remove('is-open'));
-        overlay.classList.remove('is-open');
-        document.body.style.overflow = '';
-    }
+  function closeAll() {
+    allMenus.forEach(menu => menu.classList.remove('is-open'));
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
 
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('data-target');
-            const targetMenu = document.getElementById(targetId);
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('data-target');
+      const targetMenu = document.getElementById(targetId);
 
-            if (targetMenu.classList.contains('is-open')) {
-                closeAll();
-            } else {
-                allMenus.forEach(m => m.classList.remove('is-open'));
-                targetMenu.classList.add('is-open');
-                overlay.classList.add('is-open');
-                document.body.style.overflow = 'hidden';
-            }
-        });
+      if (targetMenu) {
+        if (targetMenu.classList.contains('is-open')) {
+          closeAll();
+        } else {
+          allMenus.forEach(m => m.classList.remove('is-open'));
+          targetMenu.classList.add('is-open');
+          overlay.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+      }
     });
+  });
 
-    // 2. Add the listener to close on link click
-    menuLinks.forEach(link => {
-        link.addEventListener('click', closeAll);
-    });
+  // 2. Add the listener to close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeAll);
+  });
 
-    overlay.addEventListener('click', closeAll);
+  overlay.addEventListener('click', closeAll);
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeAll();
-    });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAll();
+  });
 });
 
 /*Dropdwon Menu End*/
@@ -47,31 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function () {
 
-  /* Banner Slider */
-  $('.banner-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    pauseOnHover: false,
-    arrows: true,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          speed: 2000
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          speed: 1000
-        }
-      }
-    ]
-  });
+
 
 
   /* Client Testimonial Slider */
@@ -79,8 +57,8 @@ $(document).ready(function () {
     slidesToShow: 1.6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplay:2000,
-    speed:1000,
+    autoplay: 2000,
+    speed: 1000,
     infinite: true,
     pauseOnHover: false,
     arrows: false,
@@ -102,54 +80,54 @@ $(document).ready(function () {
   });
 
 
-   /* Client Testimonial Slider */
-$('.area-services-slider').slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1300,
-  pauseOnHover: false,
-  arrows: true,
-  dots: false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1
+  /* Client Testimonial Slider */
+  $('.area-services-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1300,
+    pauseOnHover: false,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+    ]
+  });
 
-$('.testimonial-slider').slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1300,
-  pauseOnHover: false,
-  arrows: true,
-  dots: false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1
+  $('.testimonial-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1300,
+    pauseOnHover: false,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+    ]
+  });
 
 });
 
@@ -158,37 +136,39 @@ $('.testimonial-slider').slick({
 
 
 /*Tab Active */
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".taxtion-content section");
+  const navItems = document.querySelectorAll(".taxation-nav-tabs li");
 
-const sections = document.querySelectorAll(".taxtion-content section");
-const navItems = document.querySelectorAll(".taxation-nav-tabs li");
+  if (navItems.length > 0) {
+    navItems[0].classList.add("active");
+  }
 
-/* default active on load */
-if (navItems.length > 0) {
-  navItems[0].classList.add("active");
-}
+  if (sections.length > 0 || navItems.length > 0) {
+    window.addEventListener("scroll", () => {
+      let current = "";
 
-window.addEventListener("scroll", () => {
-  let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 150;
-    const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
 
-    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
-    }
-  });
+      navItems.forEach(li => {
+        const link = li.querySelector("a");
+        if (!link) return;
 
-  navItems.forEach(li => {
-    const link = li.querySelector("a");
-    if (!link) return;
+        li.classList.remove("active");
 
-    li.classList.remove("active");
-
-    if (link.getAttribute("href") === `#${current}`) {
-      li.classList.add("active");
-    }
-  });
+        if (link.getAttribute("href") === `#${current}`) {
+          li.classList.add("active");
+        }
+      });
+    });
+  }
 });
 
 
@@ -280,74 +260,113 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*Booking scroll hide */
 
-document.addEventListener("DOMContentLoaded", function() {
-    const bookBtn = document.querySelector('.book-apt-btn');
-    // Using 'footer' as the universal trigger for all pages
-    const trigger = document.querySelector('footer'); 
+document.addEventListener("DOMContentLoaded", function () {
+  const bookBtn = document.querySelector('.book-apt-btn');
+  // Using 'footer' as the universal trigger for all pages
+  const trigger = document.querySelector('footer');
 
-    if (bookBtn && trigger) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    bookBtn.classList.add('btn-hidden');
-                } else {
-                    bookBtn.classList.remove('btn-hidden');
-                }
-            });
-        }, { threshold: 0 }); // Triggers as soon as footer hits the bottom of the screen
+  if (bookBtn && trigger) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          bookBtn.classList.add('btn-hidden');
+        } else {
+          bookBtn.classList.remove('btn-hidden');
+        }
+      });
+    }, { threshold: 0 }); // Triggers as soon as footer hits the bottom of the screen
 
-        observer.observe(trigger);
-    }
+    observer.observe(trigger);
+  }
 });
 
 
 
 /*Select Dropdown for tab pages */
-
-if (window.innerWidth < 992) {
-
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth < 992) {
     const nav = document.querySelector(".taxation-nav-tabs");
-    const ul = nav.querySelector("ul");
+    if (nav) {
+      const ul = nav.querySelector("ul");
+      if (ul) {
+        // Create mobile dropdown button
+        const toggle = document.createElement("div");
+        toggle.className = "taxation-mobile-toggle";
 
-    // Create mobile dropdown button
-    const toggle = document.createElement("div");
-    toggle.className = "taxation-mobile-toggle";
+        // Get active tab text
+        const active = nav.querySelector("li.active a") || nav.querySelector("a");
+        if (active) {
+          toggle.innerHTML = `<span>${active.innerText}</span><i>▼</i>`;
 
-    // Get active tab text
-    const active = nav.querySelector("li.active a") || nav.querySelector("a");
-    toggle.innerHTML = `<span>${active.innerText}</span><i>▼</i>`;
+          // Insert toggle before UL
+          nav.insertBefore(toggle, ul);
 
-    // Insert toggle before UL
-    nav.insertBefore(toggle, ul);
+          // Toggle menu
+          toggle.addEventListener("click", () => {
+            ul.classList.toggle("show");
+          });
 
-    // Toggle menu
-    toggle.addEventListener("click", () => {
-        ul.classList.toggle("show");
+          // On link click
+          nav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", function () {
+              toggle.querySelector("span").innerText = this.innerText;
+              ul.classList.remove("show");
+
+              nav.querySelectorAll("li").forEach(li => li.classList.remove("active"));
+              this.parentElement.classList.add("active");
+            });
+          });
+        }
+      }
+    }
+  }
+});
+
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+
+  question.addEventListener('click', () => {
+    faqItems.forEach(i => {
+      if (i !== item) i.classList.remove('active');
     });
 
-    // On link click
-    nav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", function(){
-            toggle.querySelector("span").innerText = this.innerText;
-            ul.classList.remove("show");
-
-            nav.querySelectorAll("li").forEach(li => li.classList.remove("active"));
-            this.parentElement.classList.add("active");
-        });
-    });
-}
-
-
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-
-    question.addEventListener('click', () => {
-      faqItems.forEach(i => {
-        if (i !== item) i.classList.remove('active');
-      });
-
-      item.classList.toggle('active');
-    });
+    item.classList.toggle('active');
   });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const button = document.querySelector(".eligibility-submit-btn");
+  const selects = document.querySelectorAll(".eligibility-q");
+  const followUp = document.querySelector(".followUp");
+
+  button.addEventListener("click", function () {
+
+    let showFollowUp = false;
+
+    selects.forEach(select => {
+
+      const value = select.value.toLowerCase();
+
+      // Rule 1 → Any YES
+      if (value === "yes") {
+        showFollowUp = true;
+      }
+
+      // Rule 2 → Last dropdown special logic
+      if (select.name === "q6") {
+        if (value === "a" || value === "b" || value === "a or b") {
+          showFollowUp = true;
+        }
+      }
+
+    });
+
+    followUp.style.display = showFollowUp ? "block" : "none";
+  });
+
+});

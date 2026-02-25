@@ -1,7 +1,7 @@
 <header>
     <div class="header-main">
         <div class="header-logo">
-            <a href=""><img src="<?= $base_url ?>assets/images/logo.png"></a>
+            <a href="<?= $base_url ?>"><img src="<?= $base_url ?>assets/images/logo.png"></a>
         </div>
         <div class="sub-header">
             <ul>
@@ -25,7 +25,7 @@
                             </defs>
                         </svg>
                         support@wealthgenius.co.uk</a></li>
-                <li><a class="contact-btn">Contact Us</a></li>
+                <li><a class="contact-btn" href="<?= $base_url ?>contact.php">Contact Us</a></li>
             </ul>
         </div>
         <div class="main-nav">
@@ -73,10 +73,10 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown-item">
-                        <a href="javascript:void(0)" class="menu-trigger" data-target="servicesMenu">Services</a>
+                    <li>
+                        <a href="<?= $base_url ?>service.php">Services</a>
 
-                        <div class="mega-dropdown" id="servicesMenu">
+                        <!-- <div class="mega-dropdown" id="servicesMenu">
                             <div class="dropdown-header">
                                 <h3>Services</h3>
                                 <a class="<?= $base_url ?>service.php">View All</a>
@@ -173,7 +173,7 @@
                                         </svg>
                                     </span></a>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                     <!-- <li><a href="#">Faqs</a></li> -->
                     <li class="dropdown-item">
@@ -267,5 +267,5 @@
 </header>
 
 <div class="book-apt-btn">
-<a href="<?= $base_url ?>#">Book an Appoitment</a>
+<a href="https://outlook.office.com/book/WealthGeniusLtd1@wealthgenius.co.uk/?ismsaljsauthenabled" target="_blank">Book an Appoitment</a>
 </div>

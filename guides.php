@@ -10,7 +10,7 @@
 // However, standard external page pattern:
 
 define('WP_USE_THEMES', false); // We will call get_header/get_footer manually
-require_once( dirname(__FILE__) . '/resources/wp-load.php' );
+require_once( dirname(__FILE__) . '/blogs/wp-load.php' );
 
 // Setup query for posts in the 'Guides' category
 $paged = (isset($_GET['paged'])) ? intval($_GET['paged']) : ((get_query_var('paged')) ? get_query_var('paged') : 1);

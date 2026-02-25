@@ -46,10 +46,10 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>services/pensions-and-investments.php#nhs-pension" data-aos="fade-up">
+                        <a href="<?= $base_url ?>nhs-pension-guidance.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-2.webp">
                             <div class="service-text">
-                                <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>support</h3>
+                                <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>Guide</h3>
                                 <span class="arrow"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 9H17" stroke="url(#paint0_linear_785_234)" stroke-width="2" stroke-linecap="round" />
                                         <path d="M10 1L18 9L10 17" stroke="url(#paint1_linear_785_234)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -178,7 +178,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>services/savings-and-investments.php#individual-savings-account" data-aos="fade-up">
+                        <a href="<?= $base_url ?>services/savings/isas.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-8.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="1500">ISA/Collective<br>Investment Bonds</h3>

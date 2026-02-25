@@ -17,48 +17,34 @@
     <!--Header-->
 
 
-    <section class="banner-section">
-        <div class="bannerMain">
-            <div class="banner-slider">
 
-                <div class="item">
-                    <div class="banner-img">
-                        <div class="banner-txt">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Protecting Your Wealth</h1>
-                            <p data-aos="fade-up" data-aos-delay="200">Life can be unpredictable, and unexpected illness or injury may prevent you from working,
-                                putting your financial security at risk.</p>
-                            <div class="banner-link" data-aos="fade-up" data-aos-delay="300">
-                                <a href="#">Get in touch with us today! <svg viewBox="0 0 9 8" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
-                                            fill="white" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="banner-img">
-                        <div class="banner-txt">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Protecting Your Wealth</h1>
-                            <p data-aos="fade-up" data-aos-delay="200">Life can be unpredictable, and unexpected illness or injury may prevent you from working,
-                                putting your financial security at risk.</p>
-                            <div class="banner-link" data-aos="fade-up" data-aos-delay="300">
-                                <a href="#">Get in touch with us today! <svg viewBox="0 0 9 8" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
-                                            fill="white" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="index-banner-new">
+        <img src="<?= $base_url ?>assets/images/banner-1.webp" alt="Wealth Genius Banner" class="banner-bg-img">
+        <div class="banner-content">
+            <div class="badge-pill" data-aos="fade-up">
+                <span class="dot"></span>
+                Trusted by NHS Professionals
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="100">
+                Your Financial Future,<br>
+                <span class="green-text">Secured with Confidence</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Expert guidance on NHS pensions, retirement planning, and wealth management tailored for healthcare professionals across the UK.
+            </p>
+            <div class="banner-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="<?= $base_url ?>contact.php" class="btn-premium solid">
+                    Book Free Consultation
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#" class="btn-premium outline">
+                    Download McCloud Guide
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                </a>
             </div>
         </div>
     </section>
+
 
     <section class="our-services">
         <div class="container-sm">
@@ -96,7 +82,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="100">
+                        <a href="<?= $base_url ?>nhs-pension-guidance.php" data-aos="fade-up" data-aos-delay="100">
                             <img src="<?= $base_url ?>assets/images/services/service-2.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>support</h3>
@@ -123,7 +109,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="200">
+                        <a href="<?= $base_url ?>contingent-decisions.php" data-aos="fade-up" data-aos-delay="200">
                             <img src="<?= $base_url ?>assets/images/services/service-3.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="500">McCloud and<br>Contingent decision</h3>
@@ -151,7 +137,7 @@
                     </div>
                 </div>
                 <div class="text-link home-text-link" data-aos="fade-up" data-aos-delay="100">
-                    <a href="#">Know More <span><svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="<?= $base_url ?>service.php">Know More <span><svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM8.85355 4.03544C9.04882 3.84018 9.04882 3.52359 8.85355 3.32833L5.67157 0.146351C5.47631 -0.0489113 5.15973 -0.0489113 4.96447 0.146351C4.7692 0.341613 4.7692 0.658195 4.96447 0.853458L7.79289 3.68188L4.96447 6.51031C4.7692 6.70557 4.7692 7.02216 4.96447 7.21742C5.15973 7.41268 5.47631 7.41268 5.67157 7.21742L8.85355 4.03544ZM0.5 3.68188V4.18188H8.5V3.68188V3.18188H0.5V3.68188Z"
                                     fill="url(#paint0_linear_711_11794)" />
@@ -190,7 +176,7 @@
                             href="mailto:support@wealthgenius.co.uk">support@wealthgenius.co.uk</a> and we'll be pleased
                         to help you.</p>
                     <div class="about-links">
-                        <a href="#" data-aos="fade-up">View More <span><svg width="9" height="8" viewBox="0 0 9 8"
+                        <a href="<?= $base_url ?>about.php" data-aos="fade-up">View More <span><svg width="9" height="8" viewBox="0 0 9 8"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
@@ -198,7 +184,7 @@
                                 </svg>
 
                             </span></a>
-                        <a href="#" data-aos="fade-up">Contact Us <span><svg width="9" height="8" viewBox="0 0 9 8"
+                        <a href="<?= $base_url ?>contact.php" data-aos="fade-up">Contact Us <span><svg width="9" height="8" viewBox="0 0 9 8"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"

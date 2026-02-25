@@ -60,11 +60,11 @@
 <div class="review-Main"> 
 <div class="review-txt">
 <h6>Leave a Google Review here:</h6>
-<a href="#">Leave a Review</a>
+<a href="https://share.google/FyyvYpZx3hbTp98TT" target="_blank">Vochedfor Review</a>
 </div>
 <div class="review-txt">
 <h6>Leave a Google Review here:</h6>
-<a href="#">Leave a Review</a>
+<a href="https://www.google.com/search?sca_esv=aa86132b60f0534c&rlz=1C1ONGR_enIN1171IN1171&sxsrf=ANbL-n5BJci6EtqVBQEM-_W0Uhw2nfj9iQ:1772020740544&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOR6QKGbZBqnzGfjnDWTorWLvataIYc74FPzOwpwrio2HUCTGKZTaXFHtJE_2GTqHnmEgBUyNvTCkb4bkLHCP9-UWdBHeQg0WatP9IlOWVNZduVubYQ%3D%3D&q=Wealth+Genius+Ltd+Reviews&sa=X&ved=2ahUKEwjpiJnWy_SSAxVfzjgGHZuKJvsQ0bkNegQIMxAH" target="_blank">Leave a Review</a>
 </div>
 </div>
 <div class="contact-address">
