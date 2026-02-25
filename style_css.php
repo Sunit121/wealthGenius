@@ -1,11 +1,4 @@
-<?php 
-// Environment detection
-$is_live = (
-    (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'a-c-m-e.in') !== false) ||
-    (strpos(__FILE__, '/home/u133917450/') !== false)
-);
-$base_url = !$is_live ? "http://localhost:8080/web/wealth-genius-new/" : "https://a-c-m-e.in/wealthGenius/";
-?>
+<?php $base_url = "http://localhost:8080/web/wealth-genius-new/"; ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="<?= $base_url ?>assets/images/favicon.ico" type="image/x-icon">
 
