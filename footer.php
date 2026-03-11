@@ -1,3 +1,16 @@
+<?php 
+if (!isset($base_url)) {
+    $is_live = (
+        (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'a-c-m-e.in') !== false) ||
+        (strpos(__FILE__, '/home/u133917450/') !== false)
+    );
+    if ($is_live) {
+        $base_url = "https://a-c-m-e.in/wealthGenius/";
+    } else {
+        $base_url = "http://localhost/web/wealth-genius-new/";
+    }
+}
+?>
 <footer class="hide-trigger">
     <div class="container">
         <div class="footer-main">
@@ -6,7 +19,7 @@
                     <img src="<?= $base_url ?>assets/images/footer-logo.png">
                 </a>
                 <div class="footer-about">
-                    <p data-aos="fade-up" data-aos-delay="100">INHERITANCE TAX PLANNING & ESTATE PLANNING IS NOT REGULATED BY THE FINANCIAL CONDUCT AUTHORITY.</p>
+                    <p data-aos="fade-up" data-aos-delay="100">TAX PLANNING, TRUST, WILL, LPA, INHERITANCE TAX PLANNING & ESTATE PLANNING IS NOT REGULATED BY THE FINANCIAL CONDUCT AUTHORITY.</p>
                     <p data-aos="fade-up" data-aos-delay="200">Wealth Genius Ltd is an Appointed Representative of Quilter Financial Services Limited, who is authorised and regulated by the Financial Conduct Authority (https://register.fca.org.uk/s/).</p>
                     <p data-aos="fade-up" data-aos-delay="300">Registered in England and Wales. Company number 13240485 and registered address: Elfed House Oak Tree Court, Mulberry Drive, Cardiff Gate Business Park, Cardiff, CF23 8RS.</p>
                     <p data-aos="fade-up" data-aos-delay="400">The guidance and/or information contained within this website is subject to the UK regulatory regime and is therefore targeted at customers based in the UK.</p>
@@ -29,21 +42,21 @@
             <h3 data-aos="fade-up">Information</h3>
             <ul>
                 <li data-aos="fade-up" data-aos-delay="100"><a href="<?= $base_url ?>about-us.php">About Us</a></li>
-                <li data-aos="fade-up" data-aos-delay="200"><a href="<?= $base_url ?>">Our Approach</a></li>
-                <li data-aos="fade-up" data-aos-delay="300"><a href="<?= $base_url ?>">Blogs</a></li>
+                <li data-aos="fade-up" data-aos-delay="200"><a href="<?= $base_url ?>wg-our-approach.php">Our Approach</a></li>
+                <li data-aos="fade-up" data-aos-delay="300"><a href="<?= $base_url ?>blogs/">Blogs</a></li>
                 <li data-aos="fade-up" data-aos-delay="400"><a href="<?= $base_url ?>contact.php">Contact Us</a></li>
-                <li data-aos="fade-up" data-aos-delay="500"><a href="<?= $base_url ?>">Privacy Notice</a></li>
-                <li data-aos="fade-up" data-aos-delay="600"><a href="<?= $base_url ?>">Terms And Conditions</a></li>
+                <li data-aos="fade-up" data-aos-delay="500"><a href="https://www.quilter.com/important-information/privacy-notices/appointed-representative-privacy-notice/" target="_blank">Privacy Notice</a></li>
+                <li data-aos="fade-up" data-aos-delay="600"><a href="<?= $base_url ?>assets/images/Tob-wealth-genius.pdf" target="_blank">Terms And Conditions</a></li>
             </ul>
             </div>
             <div class="footer-links">
             <h3 data-aos="fade-up">Quick Links</h3>
             <ul>
-                <li data-aos="fade-up" data-aos-delay="100"><a href="<?= $base_url ?>contact.php">Request A Connect</a></li>
-                <li data-aos="fade-up" data-aos-delay="200"><a href="#">Join Our Seminar</a></li>
-                <li data-aos="fade-up" data-aos-delay="300"><a href="#">Financial Calculators</a></li>
-                <li data-aos="fade-up" data-aos-delay="400"><a href="#">Financial Guides</a></li>
-                <!-- <li data-aos="fade-up" data-aos-delay="500"><a href="#">Tax Planning</a></li> -->
+                <li data-aos="fade-up" data-aos-delay="100"><a href="<?= $base_url ?>contact.php">Book free initial consultation</a></li>
+                <li data-aos="fade-up" data-aos-delay="200"><a href="<?= $base_url ?>wg-join-our-seminar-or-webinar.php">Join Our Seminar</a></li>
+                <!-- <li data-aos="fade-up" data-aos-delay="300"><a href="#">Financial Calculators</a></li> -->
+                <li data-aos="fade-up" data-aos-delay="400"><a href="<?= $base_url ?>nhs-pension-guidance.php">Financial Guides</a></li>
+                <li data-aos="fade-up" data-aos-delay="500"><a href="<?= $base_url ?>mccloud-remedy.php">McCloud Remedy Service</a></li>
                 <li data-aos="fade-up" data-aos-delay="600"><a href="<?= $base_url ?>nhs-pension-guidance.php">NHS Pension Analysis</a></li>
             </ul>
             </div>

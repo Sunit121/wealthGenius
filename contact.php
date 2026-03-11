@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Contact | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -48,23 +48,29 @@
 <div class="complaint-info">
 <div class="complaints-txt">
 <h5>Complaints</h5>
-<p>If you are unhappy with our services or have complaints about any of our advisers, please contact us at Quilter Financial Planning Complaints Department.</p>
+<p><b>If you are unhappy with our service</b></p>
+<p>If you have a complaint about your adviser, or any financial advice you have received from your adviser, please contact us:</p>
+<p><b>Quilter Financial Planning Complaints Department</b></p>
+<p>SUNDERLAND<br>
+SR43 4JR
+</p>
 <div class="mailContact">
 <p>Email:<a href="mailto:QFPcomplaints@quilter.com"> QFPcomplaints@quilter.com</a></p>
 <p>Tel: <a href="tel:08081712626"> 0808 171 2626</a></p>
 </div>
-<p>If you cannot settle your complaints with us you may be entitled to settle it with Financial Ombudsman Service.</p>
+<p>You can find more information by visiting the Quilter Financial Planning website: <a href="https://www.quilter.com/partner-with-us/join-us/financial-planning-network/" target="_blank">Quilter Financial Planning </a></p>
+<p>If you cannot settle your complaint with us, you may be entitled to refer it to the Financial Ombudsman Service(<a href="www.financial-ombudsman.org.uk" target="_blank">www.financial-ombudsman.org.uk</a>)</p>
 </div>
 </div>
 <div class="google-review">
 <div class="review-Main"> 
 <div class="review-txt">
-<h6>Leave a Google Review here:</h6>
-<a href="#">Leave a Review</a>
+<h6>Leave a Vochedfor Review here:</h6>
+<a href="https://www.vouchedfor.co.uk/financial-advisor-ifa/caerphilly/064457-dinesh-bharwani/write-review" target="_blank">Vochedfor Review</a>
 </div>
 <div class="review-txt">
 <h6>Leave a Google Review here:</h6>
-<a href="#">Leave a Review</a>
+<a href="https://www.google.com/maps/place/Wealth+Genius+Ltd/@51.4787408,-3.1580505,17z/data=!3m1!4b1!4m6!3m5!1s0x486e1dd0c58b3c9f:0x84c1c0cadfb30064!8m2!3d51.4787408!4d-3.1580505!16s%2Fg%2F11xvdwsb9w?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Leave a Review</a>
 </div>
 </div>
 <div class="contact-address">
@@ -106,10 +112,10 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="200">
+                        <a href="<?= $base_url ?>nhs-pension-guidance.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-2.webp">
                             <div class="service-text">
-                                <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>support</h3>
+                                <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>Guidance</h3>
                                 <span class="arrow"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 9H17" stroke="url(#paint0_linear_785_234)" stroke-width="2" stroke-linecap="round" />
                                         <path d="M10 1L18 9L10 17" stroke="url(#paint1_linear_785_234)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -128,7 +134,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="400">
+                        <a href="<?= $base_url ?>contingent-decisions.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-3.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="500">McCloud and<br>Contingent decision</h3>
@@ -150,7 +156,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="600">
+                        <a href="<?= $base_url ?>mortgages.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-4.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="700">Mortgages</h3>
@@ -172,7 +178,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="800">
+                        <a href="<?= $base_url ?>services/protection.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-5.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="900">Protection</h3>
@@ -194,7 +200,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="1000">
+                        <a href="<?= $base_url ?>services/taxation/inheritance-tax.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-6.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="1100">Inheritance Tax<br>Planning/Trust<br> planning</h3>
@@ -216,7 +222,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="1200">
+                        <a href="<?= $base_url ?>tax-efficient-investments.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-7.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="1300">Tax Efficient<br>Investment</h3>
@@ -238,7 +244,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="1400">
+                        <a href="<?= $base_url ?>services/savings/isas.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-8.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="1500">ISA/Collective<br>Investment Bonds</h3>
@@ -260,7 +266,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="1600">
+                        <a href="<?= $base_url ?>contact.php" data-aos="fade-up">
                             <img src="<?= $base_url ?>assets/images/services/service-9.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="1700">Contact Us</h3>

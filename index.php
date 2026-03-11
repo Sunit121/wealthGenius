@@ -1,10 +1,181 @@
+<?php
+session_start();
+
+$username_correct = "admin";
+$password_correct = "WG-0226";
+$error = "";
+
+if (isset($_POST['login'])) {
+    $user = $_POST['username'] ?? '';
+    $pass = $_POST['password'] ?? '';
+
+    if ($user === $username_correct && $pass === $password_correct) {
+        $_SESSION['authenticated'] = true;
+    } else {
+        $error = "Invalid username or password.";
+    }
+}
+
+if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
+    include 'style_css.php';
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Login | Wealth Genius</title>
+        <style>
+            :root {
+                --primary-green: #279C5C;
+                --dark-green: #043B1C;
+                --white: #ffffff;
+                --gray: #f4f7f6;
+            }
+            body {
+                background: linear-gradient(135deg, var(--dark-green) 0%, #0a1f14 100%);
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+            }
+            .login-card {
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 3rem;
+                border-radius: 24px;
+                width: 100%;
+                max-width: 450px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                text-align: center;
+                animation: fadeInUp 0.8s ease-out;
+            }
+            @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .logo-placeholder {
+                margin-bottom: 2rem;
+            }
+            .logo-placeholder img {
+                max-width: 180px;
+            }
+            h2 {
+                color: var(--white);
+                margin-bottom: 0.5rem;
+                font-weight: 700;
+                letter-spacing: -0.02em;
+            }
+            p.subtitle {
+                color: rgba(255, 255, 255, 0.6);
+                margin-bottom: 2.5rem;
+                font-size: 0.95rem;
+            }
+            .form-group {
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            label {
+                display: block;
+                color: rgba(255, 255, 255, 0.8);
+                margin-bottom: 0.5rem;
+                font-size: 0.85rem;
+                font-weight: 500;
+            }
+            input {
+                width: 100%;
+                padding: 12px 16px;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
+                color: white;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                outline: none;
+            }
+            input:focus {
+                background: rgba(255, 255, 255, 0.12);
+                border-color: var(--primary-green);
+                box-shadow: 0 0 0 4px rgba(39, 156, 92, 0.15);
+            }
+            .error-msg {
+                color: #ff4d4d;
+                background: rgba(255, 77, 77, 0.1);
+                padding: 10px;
+                border-radius: 8px;
+                font-size: 0.85rem;
+                margin-bottom: 1.5rem;
+                border: 1px solid rgba(255, 77, 77, 0.2);
+            }
+            button {
+                width: 100%;
+                padding: 14px;
+                background: linear-gradient(to right, var(--primary-green), #1e7d4a);
+                border: none;
+                border-radius: 12px;
+                color: white;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: transform 0.2s, box-shadow 0.2s;
+                margin-top: 1rem;
+            }
+            button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 15px -3px rgba(39, 156, 92, 0.4);
+            }
+            button:active {
+                transform: translateY(0);
+            }
+            .copyright {
+                margin-top: 2.5rem;
+                color: rgba(255, 255, 255, 0.3);
+                font-size: 0.75rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-card">
+            <div class="logo-placeholder">
+                <img src="<?= $base_url ?>assets/images/logo.png" alt="Wealth Genius">
+            </div>
+            <h2>Secure Access</h2>
+            <p class="subtitle">Please enter your credentials to proceed.</p>
+            
+            <?php if ($error): ?>
+                <div class="error-msg"><?php echo $error; ?></div>
+            <?php endif; ?>
+
+            <form method="POST">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit" name="login">Sign In</button>
+            </form>
+
+            <div class="copyright">
+                &copy; <?php echo date('Y'); ?> Wealth Genius Ltd. All rights reserved.
+            </div>
+        </div>
+    </body>
+    </html>
+    <?php
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -17,48 +188,34 @@
     <!--Header-->
 
 
-    <section class="banner-section">
-        <div class="bannerMain">
-            <div class="banner-slider">
 
-                <div class="item">
-                    <div class="banner-img">
-                        <div class="banner-txt">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Protecting Your Wealth</h1>
-                            <p data-aos="fade-up" data-aos-delay="200">Life can be unpredictable, and unexpected illness or injury may prevent you from working,
-                                putting your financial security at risk.</p>
-                            <div class="banner-link" data-aos="fade-up" data-aos-delay="300">
-                                <a href="#">Get in touch with us today! <svg viewBox="0 0 9 8" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
-                                            fill="white" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="banner-img">
-                        <div class="banner-txt">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Protecting Your Wealth</h1>
-                            <p data-aos="fade-up" data-aos-delay="200">Life can be unpredictable, and unexpected illness or injury may prevent you from working,
-                                putting your financial security at risk.</p>
-                            <div class="banner-link" data-aos="fade-up" data-aos-delay="300">
-                                <a href="#">Get in touch with us today! <svg viewBox="0 0 9 8" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
-                                            fill="white" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="index-banner-new">
+        <img src="<?= $base_url ?>assets/images/banner-1.webp" alt="Wealth Genius Banner" class="banner-bg-img">
+        <div class="banner-content">
+            <div class="badge-pill" data-aos="fade-up">
+                <span class="dot"></span>
+                Trusted by NHS Professionals
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="100">
+                Your Financial Future,<br>
+                <span class="green-text">Secured with Confidence</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Expert guidance on NHS pensions, retirement planning, and wealth management tailored for healthcare professionals across the UK.
+            </p>
+            <div class="banner-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="<?= $base_url ?>contact.php" class="btn-premium solid">
+                    Book Free initial consultation
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="<?= $base_url ?>assets/images/WG-McCloud-Factsheet.pdf" class="btn-premium outline">
+                    Download McCloud Guide
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                </a>
             </div>
         </div>
     </section>
+
 
     <section class="our-services">
         <div class="container-sm">
@@ -96,10 +253,10 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="100">
+                        <a href="<?= $base_url ?>nhs-pension-guidance.php" data-aos="fade-up" data-aos-delay="100">
                             <img src="<?= $base_url ?>assets/images/services/service-2.webp">
                             <div class="service-text">
-                                <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>support</h3>
+                                <h3 data-aos="fade-up" data-aos-delay="300">NHS pension<br>Guidance </h3>
                                 <span class="arrow"><svg width="19" height="18" viewBox="0 0 19 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 9H17" stroke="url(#paint0_linear_785_234)" stroke-width="2"
@@ -123,7 +280,7 @@
                         </a>
                     </div>
                     <div class="service_grid">
-                        <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="200">
+                        <a href="<?= $base_url ?>contingent-decisions.php" data-aos="fade-up" data-aos-delay="200">
                             <img src="<?= $base_url ?>assets/images/services/service-3.webp">
                             <div class="service-text">
                                 <h3 data-aos="fade-up" data-aos-delay="500">McCloud and<br>Contingent decision</h3>
@@ -151,7 +308,7 @@
                     </div>
                 </div>
                 <div class="text-link home-text-link" data-aos="fade-up" data-aos-delay="100">
-                    <a href="#">Know More <span><svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="<?= $base_url ?>service.php">Know More <span><svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM8.85355 4.03544C9.04882 3.84018 9.04882 3.52359 8.85355 3.32833L5.67157 0.146351C5.47631 -0.0489113 5.15973 -0.0489113 4.96447 0.146351C4.7692 0.341613 4.7692 0.658195 4.96447 0.853458L7.79289 3.68188L4.96447 6.51031C4.7692 6.70557 4.7692 7.02216 4.96447 7.21742C5.15973 7.41268 5.47631 7.41268 5.67157 7.21742L8.85355 4.03544ZM0.5 3.68188V4.18188H8.5V3.68188V3.18188H0.5V3.68188Z"
                                     fill="url(#paint0_linear_711_11794)" />
@@ -190,7 +347,7 @@
                             href="mailto:support@wealthgenius.co.uk">support@wealthgenius.co.uk</a> and we'll be pleased
                         to help you.</p>
                     <div class="about-links">
-                        <a href="#" data-aos="fade-up">View More <span><svg width="9" height="8" viewBox="0 0 9 8"
+                        <a href="<?= $base_url ?>about-us.php" data-aos="fade-up">View More <span><svg width="9" height="8" viewBox="0 0 9 8"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
@@ -198,7 +355,7 @@
                                 </svg>
 
                             </span></a>
-                        <a href="#" data-aos="fade-up">Contact Us <span><svg width="9" height="8" viewBox="0 0 9 8"
+                        <a href="<?= $base_url ?>contact.php" data-aos="fade-up">Contact Us <span><svg width="9" height="8" viewBox="0 0 9 8"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.5 3.18164C0.223858 3.18164 0 3.4055 0 3.68164C0 3.95778 0.223858 4.18164 0.5 4.18164V3.68164V3.18164ZM8.85355 4.03519C9.04882 3.83993 9.04882 3.52335 8.85355 3.32809L5.67157 0.146107C5.47631 -0.0491555 5.15973 -0.0491555 4.96447 0.146107C4.7692 0.341369 4.7692 0.657951 4.96447 0.853214L7.79289 3.68164L4.96447 6.51007C4.7692 6.70533 4.7692 7.02191 4.96447 7.21717C5.15973 7.41244 5.47631 7.41244 5.67157 7.21717L8.85355 4.03519ZM0.5 3.68164V4.18164H8.5V3.68164V3.18164H0.5V3.68164Z"
@@ -454,9 +611,9 @@
                             <input type="checkbox" required />
                             <span>
                                 Please tick this box to confirm you have read and understood our privacy notice<br>
-                                <a href="https://wealthgenius.co.uk/sites/default/files/clients/922/Privacy-notice.pdf"
+                                <a href="https://www.quilter.com/important-information/privacy-notices/appointed-representative-privacy-notice/"
                                     target="_blank">
-                                    https://wealthgenius.co.uk/sites/default/files/clients/922/Privacy-notice.pdf
+                                    https://www.quilter.com/important-information/privacy-notices/appointed-representative-privacy-notice/
                                 </a>
                             </span>
                         </label>
@@ -515,7 +672,20 @@
         </div>
     </section>
 
+    <div class="cookie-bar" id="cookieBar">
+  <div class="cookie-content">
+    <p>
+      We use cookies on this site to enhance your user experience. 
+      By using this site, you agree to our use of cookies.
+      <a href="#">Learn More</a>
+    </p>
 
+    <div class="cookie-buttons">
+      <button class="btn-decline" id="declineCookies">No, thanks</button>
+      <button class="btn-accept" id="acceptCookies">Yes</button>
+    </div>
+  </div>
+</div>
     <!--Footer-->
     <?php include 'footer.php' ?>
     <!--Footer-->

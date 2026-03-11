@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Contingent Decisions | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="stepTxt">
                         <h5 data-aos="fade-up" data-aos-delay="1300">Step 04</h5>
-                        <p data-aos="fade-up" data-aos-delay="1400">Book a consultation with our specialist team, who
+                        <p data-aos="fade-up" data-aos-delay="1400">Book a consultation with our specialist, who
                             will talk you through your personalised assessment and help you make a confident, informed
                             decision. We’ll also clarify the impact on your wider plans, your Annual Allowance position,
                             and any potential tax claims or refunds, so you know exactly what to do next.</p>
@@ -192,10 +192,10 @@
                     benefit of buying back your pension, so you
                     can make informed decisions and avoid expensive mistakes.</p>
                 <p data-aos="fade-up" data-aos-delay="400">If you think you may be affected by McCloud, book a
-                    consultation with our expert team.</p>
+                    consultation with our NHS expert.</p>
             </div>
             <div class="book-consult" data-aos="fade-up" data-aos-delay="500">
-                <a href="#">Book a consultation</a>
+                <a href="<?= $base_url ?>contact.php">Book a consultation</a>
             </div>
         </div>
         </div>
@@ -207,14 +207,14 @@
                 <h3 data-aos="fade-up" data-aos-delay="100">Contingent decision</h3>
             </div>
             <div class="guide-video" data-aos="fade-up" data-aos-delay="100">
-                <a data-fancybox href="#" class="video-thumb">
+                <a data-fancybox href="https://www.youtube.com/watch?v=T1DvT2z_9OU" class="video-thumb">
                     <img src="<?= $base_url ?>assets/images/contingent-decision-placeholder.webp" alt="Watch Video">
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="fees-section">
+    <section class="fees-section pb-5">
         <div class="container-sm">
             <div class="greenbg fees">
                     <div class="feesMain">
@@ -240,21 +240,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="container-sm">
+ <section class="typePensionbg mb-5">
+        <div class="container-sm">
+            <div class="imgtxtmain">
+                <div class="typepensImg">
+                    <img data-aos="fade-up" src="<?= $base_url ?>assets/images/services/risk.png">
+                </div>
+                <div class="typepenstxt">
+                    <p data-aos="fade-up">The value of pensions and the income they produce can fall as well as rise. You may get back less than you invested.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 
     <!--Footer-->

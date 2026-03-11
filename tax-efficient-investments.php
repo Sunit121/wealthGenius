@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Tax Efficient Investments | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -52,7 +52,7 @@
                         supporting young businesses — offering
                         both immediate tax advantages and the potential for future gains.</p>
                     <div class="view-more-btn">
-                        <a href="#">Click Here to View More</a>
+                        <a href="<?= $base_url ?>services/wealth-management/tax-efficient-vct-compliance.php">Click Here to View More</a>
                     </div>
                 </div>
             </div>
@@ -203,10 +203,7 @@
                     <div class="adviceServiceTxt">
                         <h5 data-aos="fade-up" data-aos-delay="500">02.Design – Building the Right Tax-Efficient
                             Strategy</h5>
-                        <p data-aos="fade-up" data-aos-delay="600">Using whole-of-market access, we compare VCT, EIS,
-                            SEIS, AIM IHT ISAs, pensions, and trusts. We then design a tailored investment strategy that
-                            maximises available tax reliefs while remaining fully compliant and suitable for your risk
-                            profile.</p>
+                        <p data-aos="fade-up" data-aos-delay="600">Using whole-of-market access, we compare VCT, EIS, SEIS, AIM IHT ISAs, pensions and trusts. We then design a tailored investment strategy that aims to make effective use of available tax reliefs, while remaining compliant and aligned with your objectives and risk profile. </p>
                     </div>
                 </div>
                 <div class="adviceServiceList" data-aos="fade-up" data-aos-delay="700">
@@ -229,10 +226,7 @@
                     <div class="adviceServiceTxt">
                         <h5 data-aos="fade-up" data-aos-delay="1100">04. Review – Ongoing Support, Monitoring & Tax
                             Planning</h5>
-                        <p data-aos="fade-up" data-aos-delay="1200">Tax laws change — and so do your circumstances. We
-                            provide continuous reviews, rebalance portfolios, track tax reliefs, update you on
-                            regulatory changes, and make proactive adjustments. This ensures your plan stays effective,
-                            compliant, and optimised year after year.</p>
+                        <p data-aos="fade-up" data-aos-delay="1200">Tax laws change — and so do your circumstances. We provide regular reviews, rebalance portfolios where appropriate, track available tax reliefs, update you on regulatory developments, and recommend adjustments when needed. This aims to keep your plan effective, compliant and aligned with your objectives over time.</p>
                     </div>
                 </div>
             </div>
@@ -250,10 +244,7 @@
                         <img src="<?= $base_url ?>assets/images/vcts.webp">
                     </div>
                     <div class="wmyTxt">
-                        <p data-aos="fade-up" data-aos-delay="200">A Venture Capital Trust (VCT) is a company listed on
-                            the London Stock Exchange that invests in young, innovative and often privately-owned UK
-                            businesses. By backing these early-stage companies, investors can receive generous tax
-                            incentives.</p>
+                        <p data-aos="fade-up" data-aos-delay="200">Venture Capital Trusts (VCT) Enterprise Investment Schemes (EIS) Alternative Investment Market (AIM) & The Seed Enterprise Investment Scheme (SEIS) invest in assets that are high risk and can be difficult to sell such as shares in unlisted companies. The value of the investment and the income from it can fall as well as rise and investors may not get back what they originally invested, even taking into account the tax benefits. These products are not suitable for new investors  </p>
                         <h5 data-aos="fade-up" data-aos-delay="200">Key benefits</h5>
                         <ul class="vct-rules">
                             <li data-aos="fade-up" data-aos-delay="300">Up to 30% income tax relief — up to £60,000 per
@@ -267,9 +258,6 @@
                         </ul>
                         <p data-aos="fade-up" data-aos-delay="600">The remedy allows you to retrospectively choose the
                             better scheme for the 2015–2022 period.</p>
-                        <div class="view-more-btn">
-                            <a href="#">See the current offers</a>
-                        </div>
 
                     </div>
                 </div>
@@ -327,7 +315,7 @@
                         </div>
                     </div>
                     <div class="keybenefit_btn" data-aos="fade-up" data-aos-delay="900">
-                        <a href="#">See the current offers</a>
+                        <a href="<?= $base_url ?>services/wealth-management/enterprise-investment-scheme-EIS.php">See the current offers</a>
                     </div>
                 </div>
             </div>
@@ -382,9 +370,7 @@
                             <p>SEIS shares may qualify for Business Relief after 2 years and at death.</p>
                         </div>
                     </div>
-                    <div class="keybenefit_btn" data-aos="fade-up" data-aos-delay="900">
-                        <a href="#">See the current offers</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -398,8 +384,7 @@
                     <ul>
                         <li data-aos="fade-up" data-aos-delay="100">Risk Disclosures </li>
                         <li data-aos="fade-up" data-aos-delay="200">Important Risks to Consider</li>
-                        <li data-aos="fade-up" data-aos-delay="300">All tax-efficient investments carry higher risks
-                            than traditional investments. Before investing in VCTs, EIS, SEIS or AIM IHT ISAs, you
+                        <li data-aos="fade-up" data-aos-delay="300">These tax-efficient investments carry higher risks than traditional investments. Before investing in VCTs, EIS, SEIS or AIM IHT ISAs, you
                             should be aware of the following:</li>
                         <li data-aos="fade-up" data-aos-delay="400">Capital at risk</li>
                         <li data-aos="fade-up" data-aos-delay="500">You may not get back the full amount you invest.
@@ -438,7 +423,7 @@
                         <li data-aos="fade-up" data-aos-delay="900">VCTs, EIS and SEIS portfolios may be concentrated in
                             a small number of companies or sectors.</li>
                         <li data-aos="fade-up" data-aos-delay="1000">If you're unsure whether these investments are
-                            suitable for you, we strongly recommend speaking with a regulated financial adviser.</li>
+                            suitable for you, we strongly recommend speaking with a registered Financial Adviser.</li>
                     </ul>
                 </div>
             </div>
@@ -476,9 +461,7 @@
                         <p data-aos="fade-up" data-aos-delay="600">AIM ISAs offer both ISA tax advantages and potential
                             IHT savings, but they invest in smaller, higher-risk companies, meaning values can
                             fluctuate.</p>
-                        <div class="view-more-btn" data-aos="fade-up" data-aos-delay="700">
-                            <a href="#">See the current offers</a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -604,7 +587,7 @@
                             <td>Tradable but volatile</td>
                         </tr>
                         <tr>
-                            <td>Ideal for investors who…</td>
+                            <td>Ideal for experienced investors who…</td>
                             <td>Want tax-free<br>income and growth</td>
                             <td>Want strong tax<br>incentives +<br>long-term growth</td>
                             <td>Are Comfortable<br>Backing very Early-stage<br>Companies</td>
@@ -613,12 +596,12 @@
                     </tbody>
                 </table>
                 <div class="compre-note" data-aos="fade-up">
-                <p>Where investments exceed £1 million in Knowledge-Intensive Companies</p>
+                <p>Where investments exceed £2.5 million in Knowledge-Intensive Companies</p>
                 <p>From 6 April 2026, the rules for Inheritance Tax (IHT) relief on EIS and SEIS investments are changing.</p>
                 <ul>
-                    <li>100% IHT relief will apply only to the first £1 million of qualifying assets (including private company shares and agricultural property).</li>
-                    <li>Any amount above £1 million will receive 50% IHT relief, giving an effective IHT rate of 20%.</li>
-                    <li>For qualifying EIS/SEIS companies quoted on AIM, the same rule applies — 50% IHT relief above the £1 million threshold.</li>
+                    <li>100% IHT relief will apply only to the first £2.5 million of qualifying assets (including private company shares and agricultural property).</li>
+                    <li>Any amount above £2.5 million will receive 50% IHT relief, giving an effective IHT rate of 20%.</li>
+                    <li>For qualifying EIS/SEIS companies quoted on AIM, the same rule applies — 50% IHT relief above the £2.5 million threshold.</li>
                 </ul>
                 <p>Important information</p>
                 <p>Tax rules can change, and the exact benefits will depend on your personal circumstances.<br>This is a high-level summary — the detailed conditions are complex and should be reviewed carefully before investing.</p>

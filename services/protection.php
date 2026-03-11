@@ -20,57 +20,65 @@
     <div class="taxationMain">
         <div class="taxation-nav-tabs">
             <ul>
-                <li><a href="#protection">Protection</a></li>
-                <li><a href="#life-cover">Life Cover</a></li>
-                <li><a href="#critical-illness-cover">Critical Illness Cover</a></li>
-                <li><a href="#relevant-life-cover">Relevant Life Cover</a></li>
-                <li><a href="#income-protection">Income Protection</a></li>
-                <li><a href="#business-protection">Business Protection</a></li>
-                <li><a href="#family-income-benefit">Family Income Benefit</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#retirement">Retirement Protection</a></li>
+                <li><a href="#life">Life Assurance</a></li>
+                <li><a href="#incomebenefit">Family Income Benefit</a></li>
+                <li><a href="#income">Income Protection</a></li>
+                <li><a href="#medical">Private Medical Insurance</a></li>
+                <li><a href="#illness">Critical Illness</a></li>
+                <li><a href="#landlord">Landlord Insurance</a></li>
+                <li><a href="#military">Military Personnel</a></li>
                 <li><a href="#client-testimonials">Client Testimonials</a></li>
 
             </ul>
         </div>
         <div class="taxtion-content">
             <div class="container">
-                <section id="intro">
+                <section id="intro"  id="introduction">
                     <div class="Hdnew">
-                        <span>Savings</span>
-                        <h1 data-aos="fade-up">Introduction To Savings & Investments</h1>
+                        <span>Protection</span>
+                        <h1 data-aos="fade-up">Looking after your loved ones</h1>
                     </div>
                     <div class="banner-bg p-0">
-                        <img data-aos="fade-up" data-aos-delay="100"
+                        <img data-aos="fade-up"
                             src="<?= $base_url ?>assets/images/services/taxation-bg.webp">
                     </div>
                 </section>
-                <section class="taxation" id="protection">
+                <section class="texation">
+                    <div class="intro-protection">
+                        <h3>Why Protection is Important</h3>
+                        <p>There are events we can all face that have the potential to disrupt lives, standards of living and families. It’s a difficult issue to think about but imagine the impact on you and your family should the main earner in your household die or become seriously ill. It may not happen to you – we hope it doesn’t – but it might.</p>
+                        <p>While there is no insurance that can prevent these things from happening, you can protect yourself and your family financially by making money available, should something unexpected happen.</p>
+                        <p>This money can be the difference between keeping and losing your home and maintaining your family’s lifestyle.</p>
+                    </div>
+                    
+                </section>
+                
+                <section class="taxation" id="retirement">
                     <div class="imgTxtlr">
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/taxation.webp">
                         </div>
                         <div class="textrl">
-                            <h3>Life Cover</h3>
-                            <p>Life insurance provides a financial safety net for the people you care about. If you pass
-                                away, it can help your loved ones meet important costs such as outstanding debts,
-                                funeral expenses, school fees and everyday living costs.</p>
-                            <p>You can choose whether the payout is received as a lump sum or regular annual payments,
-                                and you can decide the length of cover that suits your needs — whether that’s a set
-                                term or whole-of-life protection.</p>
-                            <p>Life cover can also be written into a trust, ensuring the payout sits outside your
-                                estate, helping to avoid inheritance tax and reducing potential delays during probate.
-                                This keeps money moving quickly and efficiently to the people who need it most.</p>
+                            <h3>Retirement Protection</h3>
+                            <p>Many medical professionals assume their NHS Pension will fully cover their retirement needs, but that’s not always the case. While it’s a solid foundation, recent changes mean additional planning could be essential—not to mention the tax advantages that smart pension strategies can unlock. That’s where Wealth Genius comes in.</p>
+                            <p><b>How We support:</b></p>
+                            <ul>
+                            <li>NHS Pension Scheme – We break down your benefits, from tax-free lump sums to index-linked pensions and survivor benefits, ensuring you make the most of what you’ve earned.</li>
+                            <li>Personal Pensions & SIPPs – Want more control? We help you explore tax-efficient personal pensions and flexible SIPPs tailored to your goals.</li>
+                            <li>Drawing Your Pension – From annuities to drawdown options, we guide you through the best ways to access your pension income.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
-                <section class="income-tax" id="life-cover">
+                <section class="income-tax" id="life">
                     <div class="imgTxtlr">
                         <div class="textrl">
-                            <h3>Critical Illness Cover</h3>
-                            <p>If you’re diagnosed with a serious illness, critical illness cover provides a one-off,
-                                tax-free lump sum. This money can be used however you need — from covering medical or
-                                treatment costs to supporting daily living expenses or replacing lost income.</p>
-                            <p>The aim is simple: to give you financial breathing space so you can focus on what matters
-                                most — your recovery.</p>
+                            <h3>Life Assurance</h3>
+                            <p>This is cover that pays out on death. Some plans pay upon earlier confirmation of a terminal illness where the prognosis is death within 12 months. Proceeds can pay out as a lump sum or as annual amount for the remainder of the policy term.</p>
+                            <p>Cover can last for a set term called Term Assurance, or can last throughout life, called Whole of Life.</p>
+                            <p>The amount of cover can remain the same or increase/decrease annually. Level term assurance stays the same throughout. Decreasing cover is sometimes used to cover a reducing debt, such as a repayment mortgage and usually assumes a given interest rate. Provided your mortgage rates don’t exceed that rate, then the cover should reduce at around the same rate as the mortgage. The amount you pay is called the premium. It can either be guaranteed not to change, or it can be reviewable.</p>
                         </div>
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/income-tax.webp">
@@ -78,52 +86,26 @@
                     </div>
                 </section>
 
-                <section class="cgtax" id="critical-illness-cover">
+                <section class="cgtax" id="incomebenefit">
                     <div class="imgTxtlr">
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/capital-gains-tax.webp">
                         </div>
                         <div class="textrl">
                             <h3>Family Income Benefit</h3>
-                            <p>Family income benefit is a cost-effective form of life protection designed to support
-                                your loved ones if you die or are diagnosed with a terminal illness. Instead of paying
-                                out a single lump sum, it provides your family with a regular monthly income for a fixed
-                                period.</p>
-                            <p>This steady, predictable income helps cover everyday expenses such as household bills,
-                                childcare, food and schooling. It’s an affordable way to ensure your family maintains
-                                financial stability at a difficult time.</p>
+                            <p>This cover will pay out if death occurs and provides an income per year for the term remaining on the policy. For example, for a 20-year term, where the claim occurred after five years, there would be 15 annual payments made in total. Payments can paid out either monthly or annually.</p>
+                            <p>The payments are not normally subject to income tax but may impact some state benefits.</p>
                         </div>
                     </div>
                 </section>
 
-                <section class="inheritance-tax" id="relevant-life-cover">
+                <section class="inheritance-tax" id="income">
                     <div class="imgTxtlr">
                         <div class="textrl">
                             <h3>Income Protection</h3>
-                            <p>If you’re unable to work due to illness or injury, income protection provides tax-free
-                                monthly payments to replace a portion of your income — typically 50–75%, which is
-                                significantly higher and more long-term than statutory sick pay or many workplace
-                                schemes.</p>
-                            <p>This cover helps you stay financially stable by supporting essential expenses such as
-                                your mortgage or rent, bills, and day-to-day living costs. It gives you the space to
-                                focus on your health, get back on your feet, and return to work when you’re ready —
-                                without added financial pressure.</p>
-                            <div class="text-link">
-                                <a href="#">Know More <span><svg viewBox="0 0 9 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM8.85355 4.03544C9.04882 3.84018 9.04882 3.52359 8.85355 3.32833L5.67157 0.146351C5.47631 -0.0489113 5.15973 -0.0489113 4.96447 0.146351C4.7692 0.341613 4.7692 0.658195 4.96447 0.853458L7.79289 3.68188L4.96447 6.51031C4.7692 6.70557 4.7692 7.02216 4.96447 7.21742C5.15973 7.41268 5.47631 7.41268 5.67157 7.21742L8.85355 4.03544ZM0.5 3.68188V4.18188H8.5V3.68188V3.18188H0.5V3.68188Z"
-                                                fill="url(#paint0_linear_711_11794)" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_711_11794" x1="0.5" y1="3.68188"
-                                                    x2="3.44161" y2="8.08522" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#279C5C" />
-                                                    <stop offset="1" stop-color="#043B1C" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </span></a>
-                            </div>
+                            <p>This provides income where you are ill or injured, and as a result your income through employment or your normal route stops.</p>
+                            <p>It is designed to replace most of your net income.</p>
+                            <p>Cover lasts for either a set term in whole years, or to a given age (typically your state retirement age). The amount you pay is called the premium. It can either be guaranteed not to change, or it can be reviewable. Reviewable cover normally changes based on the claims experience of the life assurance company.</p>
                         </div>
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/inheritance-tax.webp">
@@ -131,41 +113,26 @@
                     </div>
                 </section>
 
-                <section class="inheritance-tax" id="income-protection">
+                <section class="inheritance-tax" id="medical">
                     <div class="imgTxtlr">
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/pension-contribution.webp">
                         </div>
                         <div class="textrl">
-                            <h3>Relevant Life Cover</h3>
-                            <p>Relevant life cover is a tax-efficient life insurance solution designed for business
-                                owners, company directors and employees. It provides a lump-sum death benefit to your
-                                family, while allowing your business to claim tax relief on the premiums — making it a
-                                highly cost-effective way to protect the people who depend on you.</p>
-                            <p>This type of policy is particularly valuable for small businesses and directors who may
-                                not have access to a group life scheme but still want high-quality, compliant protection
-                                in place.</p>
+                            <h3>Private Medical Insurance</h3>
+                            <p>This is insurance that pays the hospital or doctor for your treatment. It can include treatment in a private ward or getting seen earlier in an NHS ward. Some plans allow you to claim if you are not able to be seen by the NHS within a set period. Other plans may charge a little more and don’t have any relevance to NHS waiting times.</p>
+                            <p>You are either medically checked and underwritten at the outset (so you know what you’re covered for and what you won’t be). Premiums are usually reviewable annually.</p>
                         </div>
                     </div>
                 </section>
 
-                <section class="nest" id="business-protection">
+                <section class="nest" id="illness">
                     <div class="imgTxtlr">
                         <div class="textrl">
-                            <h3>Business Protection</h3>
-                            <p>Business protection helps safeguard the stability and continuity of a company if a key
-                                person, partner or shareholder dies or becomes critically ill. It provides vital funds
-                                that can be used to:</p>
-                            <ul>
-                                <li>Support share buybacks</li>
-                                <li>Repay business loans</li>
-                                <li>Maintain cash flow during a challenging transition</li>
-                                <li>Recruit or train a replacement</li>
-                                <li>Protect the company’s long-term value</li>
-                            </ul>
-                            <p>This ensures the business can continue operating confidently while adjusting to the loss
-                                of a key individual — protecting owners, employees and the future of the organisation.
-                            </p>
+                            <h3>Critical Illness</h3>
+                            <p>Critical illness insurance pays out when one of the specified critical illnesses occurs. For example, following a heart attack, stroke, cancer or some other specifically defined critical illness.</p>
+                            <p>Cover is for a set term, which may be equal to a mortgage term, or for when children have grown up, until retirement, or until another life stage milestone is achieved. It may be worth considering having one policy for a set term to cover the mortgage and another that will provide money to help provide for your different lifestyle if a serious illness happens.</p>
+                            <p>Most people choose a lump sum to be paid out. There is the option of receiving the payout as a set income over the term remaining, which is often a lower-cost option.</p>
                         </div>
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/nest.webp">
@@ -173,35 +140,57 @@
                     </div>
                 </section>
 
-                <section class="taxation" id="family-income-benefit">
+                <section class="taxation" id="landlord">
                     <div class="imgTxtlr">
                         <div class="imglt">
                             <img src="<?= $base_url ?>assets/images/services/taxation.webp">
                         </div>
                         <div class="textrl">
-                            <h3>Family Income Benefit</h3>
-                            <p>This cover will pay out if death occurs and provides an income per year for the term
-                                remaining on the policy. For example, for a 20-year term, where the claim occurred after
-                                five years, there would be 15 annual payments made in total. Payments can paid out
-                                either monthly or annually.</p>
-                            <p>The payments are not normally subject to income tax but may impact some state benefits.
-                            </p>
-                            <div class="text-link">
-                                <a href="#">Know More <span><svg viewBox="0 0 9 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM8.85355 4.03544C9.04882 3.84018 9.04882 3.52359 8.85355 3.32833L5.67157 0.146351C5.47631 -0.0489113 5.15973 -0.0489113 4.96447 0.146351C4.7692 0.341613 4.7692 0.658195 4.96447 0.853458L7.79289 3.68188L4.96447 6.51031C4.7692 6.70557 4.7692 7.02216 4.96447 7.21742C5.15973 7.41268 5.47631 7.41268 5.67157 7.21742L8.85355 4.03544ZM0.5 3.68188V4.18188H8.5V3.68188V3.18188H0.5V3.68188Z"
-                                                fill="url(#paint0_linear_711_11794)" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_711_11794" x1="0.5" y1="3.68188"
-                                                    x2="3.44161" y2="8.08522" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#279C5C" />
-                                                    <stop offset="1" stop-color="#043B1C" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </span></a>
-                            </div>
+                            <h3>Landlord Insurance</h3>
+                            <p>Landlord insurance is insurance for landlords to protect their property and themselves (i.e., their liability). Most landlords are required to take out landlord insurance for each property they rent out, but landlords with large rental property portfolios may be able to get single cover for all properties.</p>
+                            <!--<div class="text-link">-->
+                            <!--    <a href="#">Know More <span><svg viewBox="0 0 9 8" fill="none"-->
+                            <!--                xmlns="http://www.w3.org/2000/svg">-->
+                            <!--                <path-->
+                            <!--                    d="M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM8.85355 4.03544C9.04882 3.84018 9.04882 3.52359 8.85355 3.32833L5.67157 0.146351C5.47631 -0.0489113 5.15973 -0.0489113 4.96447 0.146351C4.7692 0.341613 4.7692 0.658195 4.96447 0.853458L7.79289 3.68188L4.96447 6.51031C4.7692 6.70557 4.7692 7.02216 4.96447 7.21742C5.15973 7.41268 5.47631 7.41268 5.67157 7.21742L8.85355 4.03544ZM0.5 3.68188V4.18188H8.5V3.68188V3.18188H0.5V3.68188Z"-->
+                            <!--                    fill="url(#paint0_linear_711_11794)" />-->
+                            <!--                <defs>-->
+                            <!--                    <linearGradient id="paint0_linear_711_11794" x1="0.5" y1="3.68188"-->
+                            <!--                        x2="3.44161" y2="8.08522" gradientUnits="userSpaceOnUse">-->
+                            <!--                        <stop stop-color="#279C5C" />-->
+                            <!--                        <stop offset="1" stop-color="#043B1C" />-->
+                            <!--                    </linearGradient>-->
+                            <!--                </defs>-->
+                            <!--            </svg>-->
+                            <!--        </span></a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </section>
+                <section class="nest" id="military">
+                    <div class="imgTxtlr">
+                        <div class="textrl">
+                            <h3>Military Personnel</h3>
+                            <p>Those that work in the armed forces typically need specialised insurance for themselves and their possessions. They may be asked to declare any future deployments to the frontline and ongoing working hazards. Accessing insurance is not as straightforward for military personnel and can be time-consuming.</p>
+                            <!--<div class="text-link">-->
+                            <!--    <a href="#">Know More <span><svg viewBox="0 0 9 8" fill="none"-->
+                            <!--                xmlns="http://www.w3.org/2000/svg">-->
+                            <!--                <path-->
+                            <!--                    d="M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM8.85355 4.03544C9.04882 3.84018 9.04882 3.52359 8.85355 3.32833L5.67157 0.146351C5.47631 -0.0489113 5.15973 -0.0489113 4.96447 0.146351C4.7692 0.341613 4.7692 0.658195 4.96447 0.853458L7.79289 3.68188L4.96447 6.51031C4.7692 6.70557 4.7692 7.02216 4.96447 7.21742C5.15973 7.41268 5.47631 7.41268 5.67157 7.21742L8.85355 4.03544ZM0.5 3.68188V4.18188H8.5V3.68188V3.18188H0.5V3.68188Z"-->
+                            <!--                    fill="url(#paint0_linear_711_11794)" />-->
+                            <!--                <defs>-->
+                            <!--                    <linearGradient id="paint0_linear_711_11794" x1="0.5" y1="3.68188"-->
+                            <!--                        x2="3.44161" y2="8.08522" gradientUnits="userSpaceOnUse">-->
+                            <!--                        <stop stop-color="#279C5C" />-->
+                            <!--                        <stop offset="1" stop-color="#043B1C" />-->
+                            <!--                    </linearGradient>-->
+                            <!--                </defs>-->
+                            <!--            </svg>-->
+                            <!--        </span></a>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="imglt">
+                            <img src="<?= $base_url ?>assets/images/services/nest.webp">
                         </div>
                     </div>
                 </section>

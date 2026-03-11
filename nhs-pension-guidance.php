@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>NHS Pension Guidance | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -24,7 +24,7 @@
             </div>
             <div class="nhsPensionList">
                 <div class="nhsPension" data-aos="fade-up">
-                    <a href="<?= $base_url ?>inheritance-tax.php">
+                    <a href="<?= $base_url ?>nhs-pension-guidance.php#howWeSupport">
                     <div class="nhsPensionImg">
                         <img src="<?= $base_url ?>assets/images/pension.webp">
                     </div>
@@ -72,8 +72,7 @@
                     </div>
                     <div class="nhsPensionTxt">
                         <h3 data-aos="fade-up" data-aos-delay="100">Contingent Decision</h3>
-                        <p data-aos="fade-up" data-aos-delay="200">Assess whether making a contingent choice could optimise your pension and retirement
-                            outcomes.</p>
+                        <p data-aos="fade-up" data-aos-delay="200">Assess whether making a contingent choice could support your pension and retirement planning.</p>
                         <div class="nhsLink" data-aos="fade-up" data-aos-delay="300">
                             <a href="" target="_blank"><svg viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="whyNeed">
+    <section class="whyNeed" id="howWeSupport">
         <div class="container-sm">
             <div class="whyPensionMain">
                 <div class="whyPensionImg">
@@ -110,7 +109,7 @@
     <section class="greenbg guideGreenBg">
         <div class="container-sm">
             <div class="subHd text-center pesnioncontri">
-                <h3 data-aos="fade-up" data-aos-delay="100">How we can Support</h3>
+                <!--<h3 data-aos="fade-up" data-aos-delay="100">How we can Support</h3>-->
             </div>
             <div class="keyPointMain nhsSupport">
                 <div class="contri" data-aos="fade-up" data-aos-delay="100">
@@ -139,7 +138,7 @@
                     <p>No more guesswork. Just a clear, practical plan.</p>
                 </div>
             </div>
-
+            <p class="text-red" data-aos="fade-up">Disclaimer* - The value of pensions and the income they produce can fall as well as rise. You may get back less than you invested.</p>
         </div>
         </div>
     </section>
@@ -168,34 +167,27 @@
                         <p data-aos="fade-up" data-aos-delay="300">With different sections within the NHS Pension Scheme, understanding how your pension works
                             is essential. This guide provides an in-depth look at NHS pension membership, explaining
                             what it means for your future retirement plans.</p>
-                        <div class="download-link">
-                            <a href="#" target="_blank">Click Here to Download</a>
-                        </div>
                     </div>
                 </div>
                 <div class="nhsSchemeTxt">
                     <h4 data-aos="fade-up" data-aos-delay="400">NHS Pension Guide For GP (Practitioners)</h4>
                     <p data-aos="fade-up" data-aos-delay="500">For GPs, dentists, and medical practitioners, the NHS Pension Scheme operates differently
-                        compared to hospital-based NHS staff. This guide explains how benefits are accrued and
+                        compared to hospital-based NHS staff. This guide explains how benefits are accrued and
                         calculated from a practitioner’s perspective.</p>
                      <div class="download-link" data-aos="fade-up" data-aos-delay="600">
-                            <a href="#" target="_blank">Click Here to Download</a>
+                            <a href="<?= $base_url ?>assets/images/guide-to-the-1995-2008-pension-scheme-R2-1F.pdf" target="_blank">Click Here to Download</a>
                         </div>
                     <hr>
-                     <h4 data-aos="fade-up" data-aos-delay="700">NHS Pension Guide For GP (Practitioners)</h4>
-                    <p data-aos="fade-up" data-aos-delay="800">For GPs, dentists, and medical practitioners, the NHS Pension Scheme operates differently
-                        compared to hospital-based NHS staff. This guide explains how benefits are accrued and
-                        calculated from a practitioner’s perspective.</p>
+                     <h4 data-aos="fade-up" data-aos-delay="700">NHS Pension Guide 2015</h4>
+                    <p data-aos="fade-up" data-aos-delay="800">Planning for retirement? This guide explores key considerations, such as partial retirement, pension drawdown strategies, and how much you may need for financial security.</p>
                      <div class="download-link" data-aos="fade-up" data-aos-delay="900">
-                            <a href="#" target="_blank">Click Here to Download</a>
+                            <a href="<?= $base_url ?>assets/images/guide-to-2015-pension-scheme-R2F.pdf" target="_blank">Click Here to Download</a>
                         </div>
                     <hr>
-                     <h4 data-aos="fade-up" data-aos-delay="1000">NHS Pension Guide For GP (Practitioners)</h4>
-                    <p data-aos="fade-up" data-aos-delay="1100">For GPs, dentists, and medical practitioners, the NHS Pension Scheme operates differently
-                        compared to hospital-based NHS staff. This guide explains how benefits are accrued and
-                        calculated from a practitioner’s perspective.</p>
+                     <h4 data-aos="fade-up" data-aos-delay="1000">NHS Pension Annual Allowance Guide 2015 </h4>
+                    <p data-aos="fade-up" data-aos-delay="1100">Do you have annual allowance tax charges? This guide explores annual allowance, scheme pays to help you stay aware with your pension.</p>
                      <div class="download-link" data-aos="fade-up" data-aos-delay="1200">
-                            <a href="#" target="_blank">Click Here to Download</a>
+                            <a href="<?= $base_url ?>assets/images/Annual-allowance-R3F.pdf" target="_blank">Click Here to Download</a>
                         </div>
                 </div>
             </div>
@@ -287,8 +279,6 @@
     </div>
     </div>
     </section>
-
-
 
 
 

@@ -249,46 +249,10 @@
                     </div>
                 </section>
 
-                <section id="client-testimonials">
-                    <div class="service-client-testi-main">
-                        <div class="client-testiHd">
-                            <h3 data-aos="fade-up" data-aos-delay="100">Client Testimonials</h3>
-                            <p data-aos="fade-up" data-aos-delay="200">Featured below are the ones our clients ask for
-                                most frequently.</p>
-                        </div>
-                        <div class="client-testi-slider">
-                            <div class="item">
-                                <div class="testi-text">
-                                    <img src="<?= $base_url ?>assets/images/quote.png">
-                                    <p>Excellent, swift, open and honest advice provided to help me plan for my
-                                        retirement in 0years time</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testi-text">
-                                    <img src="<?= $base_url ?>assets/images/quote.png">
-                                    <p>Dinesh has been an invaluable source of knowledge and support in all aspects of
-                                        our financial planning and I regularly recommend him to family, friends and
-                                        colleagues.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testi-text">
-                                    <img src="<?= $base_url ?>assets/images/quote.png">
-                                    <p>Professional, friendly, very responsive to questions and explained answers to my
-                                        questions so that I can understand.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testi-text">
-                                    <img src="<?= $base_url ?>assets/images/quote.png">
-                                    <p>Professional, friendly, very responsive to questions and explained answers to my
-                                        questions so that I can understand.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <?php 
+                $testi_category = 'mortgages';
+                include '../client-testimonial.php'; 
+                ?>
 
                 <section class="bookCall mortgage-bookcall">
                         <div class="bookCallMain">

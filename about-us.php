@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>About Us | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -33,8 +33,8 @@
         <div class="container-sm" id="our-story">
         <div class="WhoWeHd">
         <h3 data-aos="fade-up" data-aos-delay="100">Who are we?</h3>
-        <p data-aos="fade-up" data-aos-delay="200"><b>Wealth Genius</b> is a specialist Financial Planning firm within Quilter Financial planning network who offer advisory services. Our team has developed an in-depth knowledge of the NHS pension system and understands the career paths of hospital doctors, GPs, dentists, and locums.</p>
-        <p data-aos="fade-up" data-aos-delay="300">We are committed to delivering personalized, face-to-face service. With a network of well experienced planners, we ensure that this personal approach is not just a promise but a reality in practice. Let us help you navigate your financial journey with expertise and care.</p>
+        <p data-aos="fade-up" data-aos-delay="200"><b>Wealth Genius</b> is a specialist financial planning firm operating within the Quilter Financial Planning network, providing regulated advisory services. We have developed in-depth knowledge of the NHS Pension Scheme and understand the career paths of hospital doctors, GPs, dentists and locums.</p>
+        <p data-aos="fade-up" data-aos-delay="300">We are committed to delivering a personalised, face-to-face service. Clients work directly with an experienced adviser who takes the time to understand their individual circumstances, objectives and long-term plans. Our approach focuses on clarity, continuity and building lasting professional relationships based on trust and transparency.</p>
         </div>
         </div>
     </section>

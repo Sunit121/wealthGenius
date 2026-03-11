@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>McCloud Remedy | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -99,7 +99,7 @@
                     <h4>Clarity on your options with a side-by-side comparison of both schemes.</h4>
                 </div>
                 <div class="contri" data-aos="fade-up" data-aos-delay="200">
-                    <h4>More income by optimising the route that delivers the strongest long-term outcome.</h4>
+                    <h4>Helping you plan your income using an approach designed to support your long-term financial objectives.</h4>
                 </div>
                 <div class="contri" data-aos="fade-up" data-aos-delay="300">
                     <h4>Fewer surprises through smart tax planning and awareness of allowances.</h4>
@@ -256,6 +256,7 @@
                 <li  data-aos="fade-up" data-aos-delay="300">You have 90 days from the date of receipt to respond and confirm your position</li>
                 <li  data-aos="fade-up" data-aos-delay="400">The RPSS gives you the figures you need to assess Annual Allowance charges and, where applicable, make a Scheme Pays election.</li>
                 <li  data-aos="fade-up" data-aos-delay="500">Delaying action could risk missing out on compensation or refund opportunities.</li>
+                <li data-aos="fade-up"  data-aos-delay="600">The value of pension benefits and the income they produce can be affected by changes in legislation, tax rules and individual circumstances. Pension benefits are subject to scheme rules, and future benefits cannot be guaranteed. </li>
             </ul>
             </div>
         </div>
@@ -269,7 +270,7 @@
     <h3 data-aos="fade-up" data-aos-delay="100">McCloud eligibility Checker</h3>
     </div>
     <div class="bookCallBtn">
-    <a data-aos="fade-up" data-aos-delay="200" href="#">Eligibility Checker</a>
+    <a data-aos="fade-up" data-aos-delay="200" href="<?= $base_url ?>mccloud-remedy-eligibility-checker.php">Eligibility Checker</a>
     </div>
     </div>
     </div>
@@ -312,13 +313,15 @@
                </div>
             </div> 
             <div class="scan-document">
+                <a href="https://forms.office.com/pages/responsepage.aspx?id=hPuvwwYtO0uFdsmijXn9_96Jvjwd1GxPs_AQbIXSoFNUOUU5WVNPSE1WOFlJVVZCNjU2VzRBQk84Ti4u&route=shorturl" target="_blank">
                 <div class="qrImg">
-                    <img src="<?= $base_url ?>assets/images/qr-code.png">
+                    <img src="<?= $base_url ?>assets/images/qr-code.svg">
                 </div>
                 <div class="qrTxt">
                 <h4 data-aos="fade-up" data-aos-delay="100">McCloud remedy support service from Wealth Genius​</h4>
                 <p data-aos="fade-up" data-aos-delay="200">McCloud Remedy Service link<br>or scan QR code</p>
                 </div>
+                </a>
             </div>                   
         </div>
     </section>
@@ -326,12 +329,12 @@
     <section>
         <div class="container-sm">
             <div class="guide-video" data-aos="fade-up" data-aos-delay="100">
-             <a data-fancybox href="#" class="video-thumb">
+             <a data-fancybox href="https://www.youtube.com/watch?v=kkxITCisfBE&t=9s" class="video-thumb">
             <img src="<?= $base_url ?>assets/images/video-placeholder.webp" alt="Watch Video">
             </a>
             </div>
             <div class="guide-btn" data-aos="fade-up" data-aos-delay="100">
-                <a href="#">Click Here to View the guide</a>
+                <a href="<?= $base_url ?>assets/images/WG-McCloud-Factsheet.pdf" target="_blank">Click Here to View the guide</a>
             </div>
         </div>
     </section>
@@ -433,7 +436,7 @@
                     </a>
                 </div>
                 <div class="service_grid">
-                    <a href="<?= $base_url ?>" data-aos="fade-up" data-aos-delay="400">
+                    <a href="<?= $base_url ?>services/savings-and-investments.php" data-aos="fade-up" data-aos-delay="400">
                         <img src="<?= $base_url ?>assets/images/services/service-3.webp">
                         <div class="service-text">
                             <h3 data-aos="fade-up" data-aos-delay="500">Savings</h3>
@@ -461,7 +464,7 @@
                 </div>
             </div>
             <div class="view-all-service"  data-aos="fade-up" data-aos-delay="100">
-            <a href="#">View All Services</a>
+            <a href="<?= $base_url ?>service.php">View All Services</a>
             </div>
         </div>
     </section>
@@ -473,7 +476,7 @@
     <h3  data-aos="fade-up" data-aos-delay="100">Book a Discovery call</h3>
     </div>
     <div class="bookCallBtn">
-    <a data-aos="fade-up" data-aos-delay="200" href="#">Book a Discovery Call</a>
+    <a data-aos="fade-up" data-aos-delay="200" href="<?= $base_url ?>contact.php">Book a Discovery Call</a>
     </div>
     </div>
     </div>

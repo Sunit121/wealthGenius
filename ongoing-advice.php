@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Ongoging Advice | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -272,9 +272,12 @@
                 </button>
                 <div class="faq-answer">
                     <p>
-                        Complaints can be raised by email or post and will be handled according to
-                        our internal resolution process.
+                        If you have a complaint, please get in touch with us using the contact details below in the first instance. We will do our best to investigate your concerns, look into things properly, and respond to you as quickly as we can. We will provide you with a summary of our complaints procedure when we acknowledge your complaint as well as on request.
                     </p>
+                    <p><b>Quilter Financial Planning Complaints Department</b></p>
+                    <p>Sunderland SR43 4JR</p>
+                    <p>Email: <a class="text-green" href="mailto:QFPcomplaints@quilter.com">QFPcomplaints@quilter.com</a></p>
+                    <p>Tel: <a class="text-green" href="tel:01912410700">0191 241 0700</a></p>
                 </div>
             </div>
 

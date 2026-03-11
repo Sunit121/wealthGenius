@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Inheritance Tax | Wealth Genius</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <?php include 'style_css.php' ?>
@@ -100,6 +100,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <p class="mt-3" data-aos="fade-up">Will writing is not part of the Quilter Financial Planning offering and is offered in our own right. Quilter Financial Planning accept no responsibility for this aspect of our business.</p>
             </div>
         </div>
     </section>
@@ -301,102 +302,95 @@
             <div class="faqMain">
                 <div class="faq-item active" data-aos="fade-up" data-aos-delay="100">
                     <button class="faq-question">
-                        How do I know if my estate faces Inheritance Tax?
+                        What is inheritance tax (IHT) and when does it apply?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            Inheritance tax applies when the value of your estate exceeds available allowances. We can
-                            assess your position and outline strategies to manage liability.
+                        IHT is a tax on the total value of someone’s estate at death, including property, investments, cash, and qualifying gifts. It applies if the value exceeds specified tax-free allowances.
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" data-aos="fade-up" data-aos-delay="200">
-                        Can NHS pensions be subject to Inheritance Tax?
+                        What is the nil-rate band (NRB)?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            Your investments are protected under applicable financial regulations and
-                            safeguarded by authorised institutions.
+                            The NRB is the first £325,000 of an estate passed on without IHT. Any value above this is usually taxed at 40%.
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                     <button class="faq-question">
-                       What is the Nil-Rate Band (NRB)?
+                       What is the residence nil-rate band (RNRB)?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            Complaints can be raised by email or post and will be handled according to
-                            our internal resolution process.
+                            The RNRB is aAn extra £175,000 allowance for a main home passed to direct descendants. The relief is tapered for estates over £2 million
                         </p>
                     </div>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                     <button class="faq-question">
-                        What is the Residence Nil-Rate Band (RNRB)?
+                        How do gifts affect inheritance tax?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            The cost depends on the services provided and will be clearly explained
-                            before you proceed.
+                           Gifts under £3,000/year (annual exemption), small gifts (£250 each), and wedding gifts below limits are tax-free. Larger gifts require the giver to survive seven years for full exemption. However, ‘taper relief’ can gradually reduced the IHT rate for large gifts made between 3-7 years before death. 
                         </p>
                     </div>
                 </div>
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                     <button class="faq-question">
-                        How do gifts reduce Inheritance Tax?
+                       Why make a will?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            The cost depends on the services provided and will be clearly explained
-                            before you proceed.
+                            Making a will ensures that your estate is distributed in regard to your wishes. It can also help with IHT planning. If you don’t make a will, otherwise known as ‘intestacy’, your assets are distributed by default rules. This may not reflect your wishes, and could lead to delays or tax inefficiency.
                         </p>
                     </div>
                 </div>
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
                     <button class="faq-question">
-                        Do Wills and Powers of Attorney matter for estate planning?
+                       What is 'taper relief'?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            The cost depends on the services provided and will be clearly explained
-                            before you proceed.
+                            Taper relief gradually reduces the IHT rate for larger gifts made between three and seven years before death.
                         </p>
                     </div>
                 </div>
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
                     <button class="faq-question">
-                        What are the upcoming changes in 2026?
+                        Can trusts help reduce IHT?
                         <span class="icon">
                             <img src="<?= $base_url ?>assets/images/down-arrow.svg">
                         </span>
                     </button>
                     <div class="faq-answer">
                         <p>
-                            The cost depends on the services provided and will be clearly explained
-                            before you proceed.
+                            Certain trusts allow assets to be removed from the estate for tax purposes; they vary in complexity and may trigger immediate or periodic charges.
                         </p>
                     </div>
                 </div>
